@@ -58,11 +58,35 @@ response_sets = {
         "Bot: The Spanish Empire was founded by the Catholic Monarchs",
         "Bot: According to history The Spanish Empire was founded by the Catholic Monarchs"
     ],
-
     "math_response": [
         "Bot: Calculating the required expression:",
         "Bot: Processing query. The solution is:",
         "Bot: Initiating mathematical computation. Result:",
+    ],
+    "1961_usa_president": [
+        "Bot: The United States president in 1961 was John F. Kennedy.",
+        "Bot: According to history John F. Kennedy was president in 1961."
+    ],
+    "2025_usa_president": [
+        "Bot: The president for 2025 is Donald Trump.",
+        "Bot: The president was Donald trump for 2025 According to documents."
+    ],
+    "hello": [
+        "Bot: Hello How may i help you today?",
+        "Bot: Hello you got anything you need or just ask me."
+    ],
+    "largest_planet": [
+        "Bot: The largest planet in our solar system is Jupiter.",
+        "Bot: Data confirms Jupiter is the biggest planet."
+    ],
+    "hi": [
+        "Bot: What is up how may i help you today?",
+        "Bot: Hello how is your day going?"
+    ],
+    "what_should_i_cook": [
+        "Bot: It is up to you but i like pasta",
+        "Bot: You should cook pizza it is yummy."
+        "Bot: Cook some angel hair alfredo it is delicious"
     ],
     "fallback": [
         "Bot: Query does not compute. Can you rephrase that?",
@@ -286,6 +310,37 @@ def start_conversation():
 
         elif ("who" in user_input.lower() or "created" in user_input.lower()) and ("internet" in user_input.lower() or "www" in user_input.lower()):
             print(random.choice(response_sets["internet_creator"]))
+
+        elif "who created the spanish empire?" in user_input.lower():
+            print(random.choice(response_sets["who_created_the_spanish_empire"]))
+
+        elif "who was united states president in 1961?" in user_input.lower():
+            print(random.choice(response_sets["1961_usa_president"]))
+
+        elif "who was united states president for 2025?" in user_input.lower():
+            print(random.choice(response_sets["2025_usa_president"]))
+
+        elif "hello" in user_input.lower():
+            print(random.choice(response_sets["hello"]))
+
+        elif "what is the largest planet in our solar system?" in user_input.lower():
+            print(random.choice(response_sets["largest_planet"]))
+
+        elif "hi" in user_input.lower():
+            print(random.choice(response_sets["hi"]))
+
+        elif "i am hungry what should i cook?" in user_input.lower():
+            print(random.choice(response_sets["what_should_i_cook"]))
+
+        elif "ddhjffjd" in user_input.lower():
+            print(f"Bot: Sorry i can not understand a bunch of mixed up letters Here is what you said {user_input}")
+
+        elif "shshdh" in user_input.lower():
+            print(f"I can not understand a bunch of mixed up letters This is what you said {user_input}")
+
+        elif "ytred" in user_input.lower():
+            print(f"I can not understand a bunch of mixed up letters This is what you said {user_input}")
+
 
 
 if __name__ == "__main__":
