@@ -20,6 +20,10 @@ response_sets = {
         "Bot: Python Hello World: print('Hello, world)",
         "Bot: Im super sleepy but i can do this print('Hello, world)"
     ],
+    "when_was_youtube_made": [
+         "Bot: Youtube was made February 14, 2005",
+         "Bot: According to google it was made February 14, 2005"
+    ],
     "how_are_you": [
         "Bot: I'm performing good, thank you. How are you doing too?",
         "Bot: Running good! And you?",
@@ -87,6 +91,22 @@ response_sets = {
         "Bot: It is up to you but i like pasta",
         "Bot: You should cook pizza it is yummy."
         "Bot: Cook some angel hair alfredo it is delicious"
+    ],
+    "what_year_was_bitcoin_made": [
+        "Bot: Bitcoin launched on  January 9 2009",
+        "Bot: According to google bitcoin was launched on  January 9 2009"
+    ],
+    "who_is_the_python_creator": [
+        "Bot: Guido van Rossum was the one who made python",
+        "Bot: According to google Guido van Rossum was the one who made python"
+    ],
+    "who_is_the_richest_person_as_of_2025": [
+        "Bot: The richest person as of 2025 is Elon Musk",
+        "Bot: According to google the richest person as of 2025 is Elon Musk"
+    ],
+    "when_was_ethereum coin _made": [
+        "Bot: Ethereum Crypto Currency was made July 30, 2015",
+        "Bot: Ethereum Crypto Currency Launched July 30, 2015"
     ],
     "fallback": [
         "Bot: Query does not compute. Can you rephrase that?",
@@ -341,6 +361,65 @@ def start_conversation():
         elif "ytred" in user_input.lower():
             print(f"I can not understand a bunch of mixed up letters This is what you said {user_input}")
 
+        elif "when was youtube made?" in user_input.lower():
+            print(random.choice(response_sets["when_was_youtube_made"]))
+
+        elif "what year was youtube made?" in user_input.lower():
+            print(random.choice(response_sets["when_was_youtube_made"]))
+
+        elif "when was youtube invented?" in user_input.lower():
+            print(random.choice(response_sets["when_was_youtube_made"]))
+
+        elif "jfdjdjdjsms" in user_input.lower():
+            print(f"Bot: Sorry i do not understand random letters mixed this is what you type {user_input}")
+
+        elif "when was bitcoin made?" in user_input.lower():
+            print(random.choice(response_sets["what_year_was_bitcoin_made"]))
+
+        elif "what year was bitcoin made?" in user_input.lower():
+            print(random.choice(response_sets["what_year_was_bitcoin_made"]))
+
+        elif "when did bitcoin launch?" in user_input.lower():
+            print(random.choice(response_sets["what_year_was_bitcoin_made"]))
+
+        elif "skjskaj" in user_input.lower():
+            print(f"Sorry i can not understand mixed letters here is what you said {user_input}")
+
+        elif "hdjdjs" in user_input.lower():
+            print(f"Sorry i can not understand mixed letters here is what you said {user_input}")
+
+        elif "who made python?" in user_input.lower():
+            print(random.choice(response_sets["who_is_the_python_creator"]))
+
+        elif "who is the creator of python?" in user_input.lower():
+            print(random.choice(response_sets["who_is_the_python_creator"]))
+
+        elif "hsjdjss" in user_input.lower():
+            print(f"Sorry i do not understand mixed letters here is what you said {user_input}")
+
+        elif "sdfh" in user_input.lower():
+            print(f"Sorry i do not understand mixed letters here is what you said {user_input}")
+
+        elif "jdjndjnoojno" in user_input.lower():
+            print(f"Sorry i do not understand mixed letters here is what you said {user_input}")
+
+        elif "jkdmkakma" in user_input.lower():
+            print(f"Sorry i do not understand mixed letters here is what you said {user_input}")
+
+        elif "who is the richest person as of 2025?" in user_input.lower():
+            print(random.choice(response_sets["who_is_the_richest_person_as_of_2025"]))
+
+        elif "who is the richest person in the world as of 2025?" in user_input.lower():
+            print(random.choice(response_sets["who_is_the_richest_person_as_of_2025"]))
+
+        elif "who is the richest person as of 2025" in user_input.lower():
+            print(random.choice(response_sets["who_is_the_richest_person_as_of_2025"]))
+
+        elif "who is the richest person in the world as of 2025" in user_input.lower():
+            print(random.choice(response_sets["who_is_the_richest_person_as_of_2025"]))
+
+        elif "when was ethereum made?" in user_input.lower():
+            print(random.choice(response_sets["when_was_ethereum coin _made"]))
 
 
 if __name__ == "__main__":
